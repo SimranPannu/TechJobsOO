@@ -32,6 +32,7 @@ namespace TechJobs.Controllers
             {
                 jobsViewModel.Jobs = jobData.FindByValue(jobsViewModel.Value);
             }
+           
             else
             {
                 jobsViewModel.Jobs = jobData.FindByColumnAndValue(jobsViewModel.Column, jobsViewModel.Value);
